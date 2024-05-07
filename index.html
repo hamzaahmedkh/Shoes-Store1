@@ -1,11 +1,1009 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="Styling NavigationBar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="testi.js"></script>
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Papyrus</title>
+
+    <style>
+        body {
+            margin: 0%;
+        }
+
+        .item-a {
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 0px 30px;
+            color: #2e3336;
+            text-decoration: none;
+        }
+
+        .item-a:hover {
+            color: #c7c2b6;
+            background: url(img/BG.jpg);
+
+            transform: ali 0.4s ease 0s;
+        }
+
+        .item {
+            padding: 0%;
+        }
+
+        
+
+
+
+        nav ul {
+
+            width: 100%;
+            margin: 0%;
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+
+        nav ul li {
+            padding: 0.5%;
+            width: 100%;
+            text-align: center;
+          
+            text-decoration: none;
+
+        }
+
+        .di {
+            text-decoration: none;
+            color: #005898;
+        }
+
+        footer {
+            /* position: absolute; */
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #ffd166;
+            height: auto;
+            width: 100%;
+
+            padding-top: 40px;
+            color: #005898;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer-content h3 {
+            font-size: 2.1rem;
+            font-weight: 500;
+            text-transform: capitalize;
+            line-height: 3rem;
+        }
+
+        .footer-content p {
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 28px;
+            font-weight: bold;
+            font-size: 14px;
+            color: #005898;
+        }
+
+        .socials {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 3rem 0;
+        }
+
+        .socials li {
+            margin: 0 10px;
+        }
+
+        .socials a {
+            text-decoration: none;
+            color: #fff;
+            border: 1.1px solid white;
+            padding: 5px;
+
+            border-radius: 50%;
+
+        }
+
+        .socials a i {
+            font-size: 1.1rem;
+            width: 20px;
+
+
+            transition: color .4s ease;
+
+        }
+
+        .socials a:hover i {
+            color: #005898;
+        }
+
+        .footer-bottom {
+            background: #005898;
+            width: 100%;
+            padding: 20px;
+            padding-bottom: 40px;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            float: left;
+            font-size: 14px;
+            word-spacing: 2px;
+            text-transform: capitalize;
+        }
+
+        .footer-bottom p a {
+            color: #ffd166;
+            font-size: 16px;
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .footer-bottom span {
+            text-transform: uppercase;
+            opacity: .4;
+            font-weight: 200;
+        }
+
+        .footer-menu {
+            float: right;
+
+        }
+
+        .footer-menu ul {
+            display: flex;
+        }
+
+        .footer-menu ul li {
+            padding-right: 10px;
+            display: block;
+        }
+
+        .footer-menu ul li a {
+            color: #ffd166;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .footer-menu ul li a:hover {
+            color: #23b4d88a;
+        }
+
+
+        @media (max-width:500px) {
+            .footer-menu ul {
+                display: flex;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* footer end  */
+        /* cards */
+        .item-1 {
+            color: #005898;
+            font-size: larger;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: #005898;
+
+        }
+
+        .btn-outline {
+            border: 1px solid #005898;
+            color: #005898;
+        }
+
+        .btn-outline:hover {
+            background-color: #005898;
+            color: #fff;
+        }
+
+        .item-w {
+            color: #005898;
+            font-weight: bold;
+            border: 3px groove #005898;
+        }
+    </style>
+    </style>
+
 </head>
+
 <body>
+    <!-- ticker -->
+    <!-- <div style="background-color: #ffd166; color:#005898;" class="p-3 text-center">
+
+
+        <span id="date" class="mb-3 ">Date: </span>
+
+
+
+        <span id="time" class="mb-3 p-2">Time: </span>
+
+
+        <span id="location" class="mb-3 p-2">Location: </span>
+
+
+    </div> -->
+
+    <!-- logo -->
+    <div class="logo text-center">
+        <img src="img/shoes-store-logo-template-design_316488-430.avif" class="img-fluid" alt="" width="200px" height="200px">
+
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg rounded" aria-label="Twelfth navbar example">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10"
+                aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link item-a" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item-a" href="Gallery.html">Gallery</a>
+                    </li>
+
+
+                    
+                    <li class="nav-item">
+                        <a class="nav-link item-a" href="about us .html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item-a" href="Contact.html">Contact us</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <br>
+
+    <!-- carousel -->
     
+           
+                <img src="img/q.png" class="d-block w-100" height="600px" alt="...">
+         
+        <br><br><br>
+        <P class="item-1 text-center"> EID GIFT & CARD</P>
+        <hr>
+
+
+        <div class="owl-carousel owl-theme">
+            <div class="item-w" data-aos="zoom-in-up">
+                <div class="card" style="">
+
+                    <img src="eid card/eid card 1/1.PNG" class="card-img-top button" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> EID GIFT <br>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p>
+                        <a href="Eid.html"> <button type="button" class="btn btn-outline ">Shop Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item-w" data-aos="zoom-in-up">
+
+                <div class="card" style="">
+                    <img src="eid card/eid card 2/1.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> EID GIFT <br>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p> <a href="Eid.html"> <button type="button" class="btn btn-outline ">Shop Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item-w" data-aos="zoom-in-up">
+
+                <div class="card" style="">
+                    <img src="eid card/Untitled design/1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> EID CARD <br>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p> <a href="Eid.html"> <button type="button" class="btn btn-outline ">Shop Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item-w" data-aos="zoom-in-up">
+
+                <div class="card" style="">
+                    <img src="eid card/Untitled design/2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> EID CARD <br>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p> <a href="Eid.html"> <button type="button" class="btn btn-outline ">Shop Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item-w" data-aos="zoom-in-up">
+
+                <div class="card" style="">
+                    <img src="eid card/eid card 5/1.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> EID GIFT <br>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p>
+                        <a href="Eid.html"> <button type="button" class="btn btn-outline ">Shop Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item-w" data-aos="zoom-in-up">
+
+                <div class="card" style="">
+                    <img src="eid card/Untitled design/3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> EID CARD <br>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p>
+                        <a href="Eid.html"> <button type="button" class="btn btn-outline ">Shop Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <br><br>
+        <P class="item-1 text-center"> BIRTHDAY GIFT & CARD</P>
+        <hr>
+
+
+        <div class="owl-carousel owl-theme">
+            <div class="item-w" data-aos="zoom-in-up">
+                <div class="card" style="">
+                    <img src="brithday-img/2.jpg" class="card-img-top button" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> BIRTHDAY CARD <br>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p> <a href="Birthday.html"> <button type="button" class="btn btn-outline ">Shop
+                                Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item-w" data-aos="zoom-in-up">
+
+                <div class="card" style="">
+                    <img src="brithday-img/4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> BIRTHDAY CARD <br>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p> <a href="Birthday.html"> <button type="button" class="btn btn-outline ">Shop
+                                Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item-w" data-aos="zoom-in-up">
+
+                <div class="card" style="">
+                    <img src="brithday-img/6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> BIRTHDAY CARD <br>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p> <a href="Birthday.html"> <button type="button" class="btn btn-outline ">Shop
+                                Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item-w" data-aos="zoom-in-up">
+
+                <div class="card" style="">
+                    <img src="brithday-img/birthday gift 1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">BIRTHDAY GIFT <br>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p> <a href="Birthday.html"> <button type="button" class="btn btn-outline ">Shop
+                                Now</button></a>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="item-w" data-aos="zoom-in-up">
+
+                <div class="card" style="">
+                    <img src="brithday-img/birthday gift 2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> BIRTHDAY GIFT <br>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p> <a href="Birthday.html"> <button type="button" class="btn btn-outline ">Shop
+                                Now</button></a>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="item-w" data-aos="zoom-in-up">
+
+                <div class="card" style="">
+                    <img src="brithday-img/birthday gift 3.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> BIRTHDAY GIFT <br>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p>
+                        <a href="Birthday.html"> <button type="button" class="btn btn-outline ">Shop Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br><br>
+        <P class="item-1 text-center"> ANNIVERSARY GIFT & CARD</P>
+        <hr>
+
+
+        <div class="owl-carousel owl-theme">
+            <div class="item-w" data-aos="zoom-in-up">
+                <div class="card" style="">
+                    <img src="anniversary card imges/anniversary-card-WTW-MC.jpg" class="card-img-top button" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> ANNIVERSARY CARD <br>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p> <a href="Anniversary.html"> <button type="button" class="btn btn-outline ">Shop
+                                Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item-w" data-aos="zoom-in-up">
+
+                <div class="card" style="">
+                    <img src="anniversary card imges/58.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> ANNIVERSARY CARD <br>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p> <a href="Anniversary.html"> <button type="button" class="btn btn-outline ">Shop
+                                Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item-w" data-aos="zoom-in-up">
+
+                <div class="card" style="">
+                    <img src="anniversary card imges/26.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">ANNIVERSARY CARD <br>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p> <a href="Anniversary.html"> <button type="button" class="btn btn-outline ">Shop
+                                Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item-w" data-aos="zoom-in-up">
+
+                <div class="card" style="">
+                    <img src="anniversary card imges/ANNIVERSARY GIFT/ANNIVERSARY GIFTS 1.PNG" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <p class="card-text">>ANNIVERSARY GIFT <br>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p> <a href="Anniversary.html"> <button type="button" class="btn btn-outline ">Shop
+                                Now</button></a>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="item-w" data-aos="zoom-in-up">
+
+                <div class="card" style="">
+                    <img src="anniversary card imges/ANNIVERSARY GIFT/ANNIVERSARY GIFTS 2.PNG" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> ANNIVERSARY GIFT <br>
+                            <i class="fa-solid fa-star" style="Color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p>
+                        <a href="Anniversary.html"> <button type="button" class="btn btn-outline ">Shop Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item-w" data-aos="zoom-in-up">
+
+                <div class="card" style="">
+                    <img src="anniversary card imges/ANNIVERSARY GIFT/ANNIVERSARY GIFTS 3.PNG" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> ANNIVERSARY GIFT <br>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p> <a href="Anniversary.html"> <button type="button" class="btn btn-outline ">Shop
+                                Now</button></a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <br><br>
+        <P class="item-1 text-center"> MOTHER DAY GIFT & CARD</P>
+        <hr>
+        <div class="owl-carousel owl-theme">
+            <div class="item-w" data-aos="zoom-in-up">
+                <div class="card" style="">
+                    <img src="Mother day/Mother day card 1/1.jpg" class="card-img-top button" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> MOTHER DAY CARD <br>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p> <a href="Mother day.html"> <button type="button" class="btn btn-outline ">Shop
+                                Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item-w" data-aos="zoom-in-up">
+
+                <div class="card" style="">
+                    <img src="Mother day/Mother day card 1/2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> MOTHER DAY CARD <br>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p> <a href="Mother day.html"> <button type="button" class="btn btn-outline ">Shop
+                                Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item-w" data-aos="zoom-in-up">
+
+                <div class="card" style="">
+                    <img src="Mother day/Mother day card 1/3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> MOTHER DAY CARD <br>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p> <a href="Mother day.html"> <button type="button" class="btn btn-outline ">Shop
+                                Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item-w" data-aos="zoom-in-up">
+
+                <div class="card" style="">
+                    <img src="Mother day/Mother day gift/1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">> MOTHER DAY GIFT <br>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p> <a href="Mother day.html"> <button type="button" class="btn btn-outline ">Shop
+                                Now</button></a>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="item-w" data-aos="zoom-in-up">
+
+                <div class="card" style="">
+                    <img src="Mother day/Mother day gift/2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> MOTHER DAY GIFT <br>
+                            <i class="fa-solid fa-star" style="Color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p>
+                        <a href="Mother day.html"> <button type="button" class="btn btn-outline ">Shop Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item-w" data-aos="zoom-in-up">
+
+                <div class="card" style="">
+                    <img src="Mother day/Mother day gift/3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> MOTHER DAY GIFT <br>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </p>
+                        <a href="Mother day.html"> <button type="button" class="btn btn-outline ">Shop Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+
+        <section class="testimonials" style="background-image: url(img/bg2.jpg);">
+            <div class="container">
+                <div class="title">
+                    <h5>Testimonials</h5>
+                    <h2>What our clients say</h2>
+                </div>
+                <div class="owl-carousel owl-theme testi">
+                    <!-- Single Starts -->
+                    <div class="item">
+                        <div class="profile">
+                            <img src="img/2.jpg" alt="">
+                            <div class="information">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p>Hamza Ahmed</p>
+                                <span>Web Developer</span>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita velit labore suscipit
+                            distinctio, officiis deserunt rem blanditiis ducimus. Voluptate quaerat assumenda qui veniam
+                            facilis doloribus maiores impedit ducimus cum accusamus.</p>
+                        <div class="icon">
+                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <!-- Single Ends -->
+                    <div class="item">
+                        <div class="profile">
+                            <img src="img/1.jpg" alt="">
+                            <div class="information">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p>Ayan kashif</p>
+                                <span>Web Developer</span>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita velit labore suscipit
+                            distinctio, officiis deserunt rem blanditiis ducimus. Voluptate quaerat assumenda qui veniam
+                            facilis doloribus maiores impedit ducimus cum accusamus.</p>
+                        <div class="icon">
+                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="profile">
+                            <img src="img/3.jpg" alt="">
+                            <div class="information">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p>Alawz Kashif</p>
+                                <span>Web Developer</span>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita velit labore suscipit
+                            distinctio, officiis deserunt rem blanditiis ducimus. Voluptate quaerat assumenda qui veniam
+                            facilis doloribus maiores impedit ducimus cum accusamus.</p>
+                        <div class="icon">
+                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <!-- footers -->
+        <footer>
+            <div class="footer-content">
+                <h3><b>PAPYRUS</b></h3>
+                <p><b>Papyrus Limited is a leading social expressions company known for its adorability-driven brand
+                        appeal
+                        and expansive range of products, including cards, gifts, and e-cards.</b></p>
+                <ul class="socials">
+                    <li><a href="https://www.instagra
+                    m.com/papyrus/?hl=en"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/papyrus/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/papyrus_online?lang=en"><i class="fa fa-twitter"></i></a></li>
+
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p><a href="#">Papyrus cards</a> </p>
+                <div class="footer-menu">
+                    <ul class="f-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="about us .html">About us</a></li>
+                        <li><a href="Contact.html">Contact us</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+
+        <!-- slider -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>$('.testi.owl-carousel').owlCarousel({
+                items: 2,
+                margin: 10,
+                lazyLoad: true,
+                dots: true,
+                autoPlay: true,
+                autoPlayTimeout: 3000,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 2,
+                    },
+                    1000: {
+                        items: 3,
+                    }
+                }
+            });</script>
+        <script>$('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })</script>
+
+        <script>
+            AOS.init();
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ticker -->
+        <script>
+            function updateTicker() {
+                const dateElement = document.getElementById("date");
+                const timeElement = document.getElementById("time");
+                const locationElement = document.getElementById("location");
+
+                // Get current date and time
+                const currentDate = new Date();
+                const dateString = currentDate.toDateString();
+                const timeString = currentDate.toLocaleTimeString();
+
+                // Check if the location has not been fetched before
+                if (!localStorage.getItem("location")) {
+                    // Get geolocation (latitude and longitude)
+                    if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(updateLocation);
+                    }
+
+                    function updateLocation(position) {
+                        const latitude = position.coords.latitude.toFixed(2);
+                        const longitude = position.coords.longitude.toFixed(2);
+
+
+                        // Save location to local storage
+                        localStorage.setItem("location", "Location: " + latitude + ", " + longitude);
+                    };
+                }
+
+                // Retrieve and update location from local storage to your website
+                const locationString = localStorage.getItem("location");
+
+                // Update ticker content
+                dateElement.innerHTML = "Date: " + dateString;
+                timeElement.innerHTML = "Time: " + timeString;
+                locationElement.innerHTML = locationString;
+            }
+
+            // Update the ticker every second
+            setInterval(updateTicker, 1000);
+
+            // Initial update
+            updateTicker();
+        </script>
+
 </body>
+
 </html>
